@@ -1,11 +1,11 @@
-//  Repo link
+// ..https://github.com/Muktar2298/Assignment/blob/main/assignment.js
 
 
 //---Problem-1--//
 
 function kilometerToMeter(kilo){
     var meter;
-    if(kilo >= 1){
+    if(kilo > 0){
         meter = kilo * 1000;   //..1 kilometer  equal to 1000 meter..//
     }
     else{
@@ -45,15 +45,15 @@ function hotelCost(days){
     if(days > 0 && days <= 10 ){
          totalCost = days * 100;          //..From First 10 days cost is 100 per Per Night ..//
     }
-    else if( days > 10 && days <= 17){
+    else if( days > 10 && days <= 20){
          price = 10 * 100;
          remaindays = days - 10;
-         totalCost = price + (remaindays * 80);      //..From (10-17) days cost is 80 Per Night..//
+         totalCost = price + (remaindays * 80);      //..From (11-20) days cost is 80 Per Night..//
     }
-    else if(days > 17){
-        price = (10 * 100) + ( 7 * 80);
-        remaindays = days - 17;
-        totalCost = price + (remaindays * 50);       //..From (18 to infinite) days cost is 50 Per Night ..//
+    else if(days > 20){
+        price = (10 * 100) + ( 10 * 80);
+        remaindays = days - 20;
+        totalCost = price + (remaindays * 50);       //..From (21 to infinite) days cost is 50 Per Night ..//
     }
     else{
         totalCost = "Enter the right Input"; 
@@ -61,7 +61,7 @@ function hotelCost(days){
     
     return totalCost; //..Return hotel cost..//
 }
-// console.log(hotelCost(20));
+// console.log(hotelCost(22));
 
 
 
